@@ -1,0 +1,11 @@
+<?php
+     include('conn.php');
+	 
+	 $pname=$_post['name'];
+	 $phone=$_post['phone'];
+	 $token=$_post['token'];
+	 
+	 mysqli_query($conn,"insert into 'token'  (name,phone,token) values ('$name','phone','token')");
+	 header('location:doctordb.php');
+?>	 
+	 
